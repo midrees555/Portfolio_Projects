@@ -1,0 +1,13 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+.env
+*.env
+.ipynb_checkpoints
+*.csv
+*.xlsx
+data/
