@@ -11,4 +11,4 @@ A collection of professional, scalable, and real-world portfolio projects across
 | (future) | IoT | Sensor data logging & analytics |
 
 ---
-🔗 Stay connected: [LinkedIn](https://linkedin.com/in/your-profile)
+🔗 Stay connected: [LinkedIn](https://linkedin.com/in/midrees555)
