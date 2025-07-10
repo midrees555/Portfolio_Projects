@@ -11,6 +11,24 @@ This project started from scratch and was built step-by-step with a strong focus
 
 ---
 
+## Application Flow
+
+![Main Menu](Brainstorm_Idea/Flow_Chart/1_Main_Menu.png)
+
+![Add Expense](Brainstorm_Idea/Flow_Chart/2_Add_Expense.png)
+
+![View Expense](Brainstorm_Idea/Flow_Chart/3_View_Expense.png)
+
+![Generate Expense Report](Brainstorm_Idea/Flow_Chart/4_Generate_Expense_Report.png)
+
+![Add Income](Brainstorm_Idea/Flow_Chart/5_Add_Income.png)
+
+![View Income](Brainstorm_Idea/Flow_Chart/6_View_Income.png)
+
+![Generate Income Report](Brainstorm_Idea/Flow_Chart/7_Generate_Income_Report.png)
+
+---
+
 ## 🎯 Why This Project?
 
 Managing personal finance is crucial in everyday life, especially for students, freelancers, and early professionals. Yet, most people don't track where their money goes.
