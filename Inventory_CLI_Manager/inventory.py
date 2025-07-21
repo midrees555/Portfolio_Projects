@@ -1,0 +1,1 @@
+# Core logic: add, remove, display products
