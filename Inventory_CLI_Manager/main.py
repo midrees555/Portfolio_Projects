@@ -12,7 +12,7 @@ from file_handler import load_products_from_file, save_products_to_file
 def show_menu():
     """Display options with numbers to choose action in the form of a single number at a time"""
     
-    print("\n_____________________________", end="")
+    # print("\n_____________________________", end="")
     print(MENU)
 
 
@@ -66,15 +66,16 @@ def main():
         elif user_action_choice == '3':
             list_products(products)
             
-            
         else:   # option 4 - Exit
             print("Exiting Program...\n")
+            print("============================================")
+            break
         
         if not control_main_program_flow():
             break
 
     
-    print("\n\n|===============================|")
+    print("\n|===============================|")
     print("|___ S E E   Y O U   S O O N ___|")
     print("|__________ 👋 👋 👋 ___________|")
         

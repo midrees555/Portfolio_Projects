@@ -3,6 +3,7 @@
 
 # ############ Import modules & packages #############
 from utils import is_valid_product_name, is_valid_product_price, process_control_user_choice
+from file_handler import save_products_to_file
 
 
 def add_product(products, p_name, p_price):
@@ -57,8 +58,9 @@ def list_products(products):
     """Show all inventory products to user"""
     
     if len(products) == 0:
-        print("❌  Error! Product inventory is empty!\n")
+        print("⚠️  Error! Product inventory is empty!\n")
         upsert_product(products)    # if user want to add new product
+        save_products_to_file(products)     # ✔️ Saved after add new product
         return
     
     for idx, product in enumerate(products, 1):

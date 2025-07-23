@@ -18,6 +18,7 @@ def load_products_from_file():
     
     if not os.path.exists(PRODUCTS_FILE_PATH):
         # File doesn't exist, return empty products list
+        print("=================================================================")  # for clearity
         print("⚠️  No existing product file found! Starting with empty inventory.")
         return []
     
@@ -47,6 +48,6 @@ def save_products_to_file(products_list):
     try:
         with open(PRODUCTS_FILE_PATH, 'w') as file:
             json.dump(products_list, file, indent=4)
-            print("✔️  Products saved successfully!")
+            print("✔️  Products list updated successfully!")
     except IOError as e:
         print(f"❌  Failed to save products!\nError was {e}")
