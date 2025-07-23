@@ -34,3 +34,19 @@ def load_products_from_file():
         print(f"❌  Failed to load products!\nError was {e}")
         return []
     
+    
+def save_products_to_file(products_list):
+    """
+    Save the current list of products to a JSON file.
+    This will overwrite the previous contents with updated inventory.
+    """
+    
+    # Ensure 'data' directory exists
+    os.makedirs(os.path.dirname(PRODUCTS_FILE_PATH), exist_ok=True)
+    
+    try:
+        with open(PRODUCTS_FILE_PATH, 'w') as file:
+            json.dump(products_list, file, indent=4)
+            print("✔️  Products saved successfully!")
+    except IOError as e:
+        print(f"❌  Failed to save products!\nError was {e}")
