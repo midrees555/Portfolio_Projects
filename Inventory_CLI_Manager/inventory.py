@@ -63,5 +63,10 @@ def list_products(products):
         save_products_to_file(products)     # ✔️ Saved after add new product
         return
     
+    print("\nCurrent Inventory:")
+    print("====================================")
+    print(f'🏷️  {"Product":<20} 💲{"Price":<10}')
+    print("====================================")
     for idx, product in enumerate(products, 1):
-        print(f"{idx:>2}. {product['name']:<20} ${product['price']:>10,.2f}")   # little bit formatted
+        print(f'{idx:>2}. {product["name"]:<20} ${product["price"]:>10,.2f}')   # little bit formatted
+        print("------------------------------------")

@@ -67,7 +67,7 @@ def main():
             list_products(products)
             
         else:   # option 4 - Exit
-            print("Exiting Program...\n")
+            print("Exiting Program...")
             print("============================================")
             break
         
