@@ -2,19 +2,11 @@
 
 import os
 import pandas as pd
-
+from dataset_manager.data_loader import DataLoader
 class DataSetInterface:        
     def get_data(self, file_path):
         try:
-            if file_path.endswith('.csv'):
-                data = pd.read_csv(file_path)
-                return data
-            elif file_path.endswith(('.xls', '.xlsx')):
-                data = pd.read_excel(file_path)
-                return data
-            else:
-                raise ValueError("Unsupported file format!")
-            
+            loader = DataLoader()
+            return loader.load_data(file_path)
         except Exception as e:
-            print(f"❌ Failed to load file: {e}")
-            return None
+            raise e     # Let test catch the real error

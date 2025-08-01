@@ -20,7 +20,7 @@ class FileValidator:
             raise FileNotFoundError(f"File not found: '{file_path}'")
         
         # 2. Check file extension
-        _, extension = os.path.splitext(file_path)              # _ (ignoring this place)
+        _, extension = os.path.splitext(file_path)              # _ (ignoring this place) & .splitext(file_path) > separate path+extension
         if extension.lower() not in self.allowed_file_types:
             raise ValueError("Unsupported file type!")
             
